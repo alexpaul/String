@@ -70,6 +70,16 @@ let matchesPrefix = fellows.filter { $0.hasPrefix("An") }
 print(matchesPrefix) // ["Anabelle", "Anna", "Anamarie"]
 ```
 
+## Converting a `String` to an array of `String`s or an array of `Character`s aka `String.Element`
+
+```swift 
+let charArr: [Character] = str.map { $0 } // creates Character array aka String.Element
+
+let strArr = str.map { String($0) } // create a String array
+
+let alsoCharArr: [String.Element] = Array(str)
+```
+
 
 ## Writing to a file 
 

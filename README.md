@@ -77,7 +77,12 @@ let charArr: [Character] = str.map { $0 } // creates Character array aka String.
 
 let strArr = str.map { String($0) } // create a String array
 
-let alsoCharArr: [String.Element] = Array(str)
+let alsoCharArr: [String.Element] = Array(str) // also an array of String.Element or Character
+
+
+print(charArr[0]) // p
+
+print(strArr[0]) // p
 ```
 
 

@@ -78,3 +78,19 @@ let output = (try? String(contentsOf: url)) ?? "no contents"
 
 print(output) // "Writing to a file"
 ```
+
+
+## Challenge 
+
+
+Write the following text below to a file called `Output.txt` in the sandbox documents directory. 
+
+<pre> 
+iOS apps is predominantly written using Objective-C. 
+</pre> 
+
+We are in the current year of 2020 and no longer is this statement true. Update the output file to the following. 
+
+<pre> 
+iOS apps is predominantly written using Swift. 
+</pre> 

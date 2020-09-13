@@ -5,6 +5,8 @@
 
 ## Types of encoding `utf8`, `utf16`
 
+https://swift.org/blog/utf8-string/
+
 
 ## Accessing the elements of a String using `String.Index`
 

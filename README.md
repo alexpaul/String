@@ -3,6 +3,9 @@
 
 ## Unicode
 
+https://home.unicode.org/basic-info/overview/
+
+
 ## Types of encoding `utf8`, `utf16`
 
 https://swift.org/blog/utf8-string/

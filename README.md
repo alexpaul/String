@@ -83,14 +83,18 @@ print(output) // "Writing to a file"
 ## Challenge 
 
 
-Write the following text below to a file called `Output.txt` in the sandbox documents directory. 
+1. Write the following text below to a file called `Output.txt` in the sandbox documents directory. 
 
 <pre> 
 iOS apps is predominantly written using Objective-C. 
 </pre> 
 
-We are in the current year of 2020 and no longer is this statement true. Update the output file to the following. 
+2. Read and print the contents of the `Output.txt` file. 
+
+3. We are in the current year of 2020 and no longer is this statement true. Update the output file to the following. 
 
 <pre> 
 iOS apps is predominantly written using Swift. 
 </pre> 
+
+4. Read and print the modified `Output.txt` file. 

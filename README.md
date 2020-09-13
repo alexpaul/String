@@ -5,6 +5,8 @@
 
 https://home.unicode.org/basic-info/overview/
 
+The Unicode scalar value "\u{301}"
+
 
 ## Types of encoding `utf8`, `utf16`
 

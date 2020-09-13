@@ -34,6 +34,17 @@ let firstName = fullName[..<spaceCharacterIndex]
 print(firstName) // "Alex"
 ```
 
+#### Using `offsetBy:` to get a distance `String.Index`
+
+```swift 
+let str = "programming"
+
+let firstIndex = str.startIndex
+
+let distance = str.index(str.startIndex, offsetBy: 2)
+print(str[firstIndex...distance]) // "pro"
+```
+
 
 ## Substrings 
 

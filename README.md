@@ -3,7 +3,7 @@
 
 ## Unicode
 
-## Types of encoding `utf8`, `utf16` and `utf32`
+## Types of encoding `utf8`, `utf16`
 
 
 ## Accessing the elements of a String using `String.Index`

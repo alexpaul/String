@@ -75,6 +75,8 @@ https://swift.org/blog/utf8-string/
 
 ## Accessing the elements of a String using `String.Index`
 
+Contrary to an array in a String you can only subscript into its' collection of characters using `String.Index` as in the following examples. This is inherently because a character in a String an mentioned earlier can be one or more unicode values, so this would not give you back the desired effect you may need and Swift makes use of `String.Index` for this purpose.
+
 ```swift 
 let fullName = "Alex Paul"
 ```

@@ -227,3 +227,10 @@ iOS apps is predominantly written using Swift.
 </pre> 
 
 4. Read and print the modified `output.txt` file. 
+
+## Recommended Reading 
+
+1. [Swift Programming Language - Strings and Characters](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)
+2. [Apple Documentation - String](https://developer.apple.com/documentation/swift/string)
+3. [Apple Documentation - Character](https://developer.apple.com/documentation/swift/character)
+

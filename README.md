@@ -254,6 +254,20 @@ Input: ransomNote = "aa", magazine = "aab"
 Output: true
 </pre>
 
+#### Challenge 3 
+
+[HackerRank](https://www.hackerrank.com/challenges/pangrams/problem)
+
+<pre>
+Roy wanted to increase his typing speed for programming contests. His friend suggested that he type the sentence 
+"The quick brown fox jumps over the lazy dog" repeatedly. This sentence is known as a pangram because it contains
+every letter of the alphabet.
+
+After typing the sentence several times, Roy became bored with it so he started to look for other pangrams.
+
+Given a sentence, determine whether it is a pangram. Ignore case.
+</pre>
+
 ## Recommended Reading 
 
 1. [Swift Programming Language - Strings and Characters](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)

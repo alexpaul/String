@@ -42,7 +42,7 @@ https://www.compart.com/en/unicode
 
 #### `utf16`
 
-_Wikipdeia:_ UTF-16 is the only web-encoding incompatible with ASCII, and never gained popularity on the web, where it is used by under 0.01% (1 hundredth of 1 percent) of web pages. UTF-8 by comparison is used by approximately 95% of all web pages. The Web Hypertext Application Technology Working Group (WHATWG) considers UTF-8 "the mandatory encoding for all text" and that for security reasons browser applications should not use UTF-16.
+_Wikipedia:_ UTF-16 is the only web-encoding incompatible with ASCII, and never gained popularity on the web, where it is used by under 0.01% (1 hundredth of 1 percent) of web pages. UTF-8 by comparison is used by approximately 95% of all web pages. The Web Hypertext Application Technology Working Group (WHATWG) considers UTF-8 "the mandatory encoding for all text" and that for security reasons browser applications should not use UTF-16.
 
 https://en.wikipedia.org/wiki/UTF-16
 

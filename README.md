@@ -6,6 +6,7 @@ A `String` is a collection of characters. A `Character` is made up of one or mor
 
 ```swift 
 let aString = "Hello, developers." // literal String 
+let ceoKeynote = "Developers! Developers! Developers!" // initializer syntax
 ```
 
 #### Unicode value count 
@@ -39,6 +40,13 @@ https://www.compart.com/en/unicode
 
 ## Types of encoding `utf8`, `utf16`
 
+#### `utf16`
+
+_Wikipdeia:_ UTF-16 is the only web-encoding incompatible with ASCII, and never gained popularity on the web, where it is used by under 0.01% (1 hundredth of 1 percent) of web pages. UTF-8 by comparison is used by approximately 95% of all web pages. The Web Hypertext Application Technology Working Group (WHATWG) considers UTF-8 "the mandatory encoding for all text" and that for security reasons browser applications should not use UTF-16.
+
+https://en.wikipedia.org/wiki/UTF-16
+
+
 #### `utf8`
 
 _Wikipedia:_ UTF-8 is a variable-width character encoding used for electronic communication. Defined by the Unicode Standard, the name is derived from Unicode (or Universal Coded Character Set) Transformation Format – 8-bit.
@@ -49,12 +57,8 @@ UTF-8 is by far the most common encoding for the World Wide Web, accounting for 
 
 https://en.wikipedia.org/wiki/UTF-8
 
-#### `utf16`
 
-_Wikipdeia:_ UTF-16 is the only web-encoding incompatible with ASCII, and never gained popularity on the web, where it is used by under 0.01% (1 hundredth of 1 percent) of web pages. UTF-8 by comparison is used by approximately 95% of all web pages. The Web Hypertext Application Technology Working Group (WHATWG) considers UTF-8 "the mandatory encoding for all text" and that for security reasons browser applications should not use UTF-16.
-
-https://en.wikipedia.org/wiki/UTF-16
-
+#### Swift 5 switches to `utf8`
 
 Swift 5 switches the preferred encoding to `utf8`. 
 
@@ -107,6 +111,27 @@ let firstIndex = str.startIndex
 let distance = str.index(str.startIndex, offsetBy: 2)
 print(str[firstIndex...distance]) // "pro"
 ```
+#### Inserting
+
+```swift 
+var str = "Alex"
+
+str.insert(contentsOf: " Paul", at: str.endIndex)
+
+print(str) // "Alex Paul"
+```
+
+#### Removing
+
+```swift 
+var str = "alex"
+
+str.remove(at: str.startIndex)
+
+print(str) // "lex"
+```
+
+> Note: if you're working in a `repl` environment and don't have access to code completion and it's okay with the interview feel free to convert the given `String` to an `Array` to avoid working with `String.Index`. 
 
 
 ## Substrings 
@@ -133,23 +158,18 @@ let matchesPrefix = fellows.filter { $0.hasPrefix("An") }
 print(matchesPrefix) // ["Anabelle", "Anna", "Anamarie"]
 ```
 
-## Converting a `String` to an array of `String`s or an array of `Character`s aka `String.Element`
+#### `hasSuffix`
 
 ```swift 
-let charArr: [Character] = str.map { $0 } // creates Character array aka String.Element
+let words = ["Running", "Hockey", "Climbing", "Singing", "Dance", "Jump", "Walking"]
 
-let strArr = str.map { String($0) } // create a String array
+let ingWords = words.filter { $0.hasSuffix("ing") }
 
-let alsoCharArr: [String.Element] = Array(str) // also an array of String.Element or Character
-
-
-print(charArr[0]) // p
-
-print(strArr[0]) // p
+print(ingWords)
 ```
 
 
-## Writing to a file 
+## Writing to a file in the App's Sandbox
 
 ```swift 
 let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Alex.txt")

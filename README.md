@@ -37,6 +37,8 @@ https://home.unicode.org/basic-info/overview/
 
 https://www.compart.com/en/unicode
 
+https://www.babelstone.co.uk/Unicode/whatisit.html (can search for multiple unicode scalars) 
+
 
 ## Types of encoding `utf8`, `utf16`
 

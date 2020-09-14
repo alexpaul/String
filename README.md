@@ -298,4 +298,5 @@ Given a sentence, determine whether it is a pangram. Ignore case.
 2. [Apple Documentation - String](https://developer.apple.com/documentation/swift/string)
 3. [Apple Documentation - Character](https://developer.apple.com/documentation/swift/character)
 4. [Apple Documentation - CharacterSet](https://developer.apple.com/documentation/foundation/characterset)
+5. [Chris Lattner's Homepage](http://nondot.org/sabre/)
 

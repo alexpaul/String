@@ -132,6 +132,10 @@ print(str) // "lex"
 ```
 
 > Note: if you're working in a `repl` environment and don't have access to code completion and it's okay with the interview feel free to convert the given `String` to an `Array` to avoid working with `String.Index`. 
+>```swift
+>let str = "Some input String"
+>let strArr = Array(str) // you now have an array of [String.Element] aka and array of [Character]
+>```
 
 
 ## Substrings 

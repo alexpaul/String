@@ -5,8 +5,8 @@ A `String` is a collection of characters. A `Character` is made up of one or mor
 #### String initialization
 
 ```swift 
-let aString = "Hello, developers." // literal String 
-let ceoKeynote = "Developers! Developers! Developers!" // initializer syntax
+let aString = "Developers! Developers! Developers!" // literal String 
+let emptyString = String() // initializer syntax
 ```
 
 #### Unicode value count 

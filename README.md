@@ -211,6 +211,7 @@ print(output) // "Writing to a file"
 
 ## Challenge 
 
+#### Challenge 1 
 
 1. Write the following text below to a file called `output.txt` in the sandbox documents directory. 
 
@@ -227,6 +228,31 @@ iOS apps is predominantly written using Swift.
 </pre> 
 
 4. Read and print the modified `output.txt` file. 
+
+#### Challenge 2 
+
+<pre>
+Given an arbitrary ransom note string and another string containing letters from all the magazines, 
+write a function that will return true if the ransom note can be constructed from the magazines ;
+otherwise, it will return false.
+
+Each letter in the magazine string can only be used once in your ransom note.
+
+Example 1:
+
+Input: ransomNote = "a", magazine = "b"
+Output: false
+Example 2:
+
+Input: ransomNote = "aa", magazine = "ab"
+Output: false
+Example 3:
+
+Input: ransomNote = "aa", magazine = "aab"
+Output: true
+</pre>
+
+[LeetCode](https://leetcode.com/problems/ransom-note/)
 
 ## Recommended Reading 
 

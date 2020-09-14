@@ -231,6 +231,8 @@ iOS apps is predominantly written using Swift.
 
 #### Challenge 2 
 
+[LeetCode - Ransom Note](https://leetcode.com/problems/ransom-note/)
+
 <pre>
 Given an arbitrary ransom note string and another string containing letters from all the magazines, 
 write a function that will return true if the ransom note can be constructed from the magazines ;
@@ -251,8 +253,6 @@ Example 3:
 Input: ransomNote = "aa", magazine = "aab"
 Output: true
 </pre>
-
-[LeetCode](https://leetcode.com/problems/ransom-note/)
 
 ## Recommended Reading 
 

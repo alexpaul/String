@@ -189,6 +189,28 @@ let ingWords = words.filter { $0.hasSuffix("ing") }
 print(ingWords)
 ```
 
+## Working with `NSString`
+
+There are times when we may need to use Objective-C API's that's only exposed to classes. In the example below if we wanted to build our own caching system for images being loaded into a table view or collection view we can use `NSCache`. `NSCache` works very similar to a dictionary but allows in memoory or on disk caching, however `NSCache` only works with class types. So if we wanted the key to be a string and the value an image using Swift's String would not work as a `String` is a value type, in this case we can use `NSString` and due to Swift's bridging which allows interoperability we can switch back to native `String` as needed. 
+
+```swift 
+class ImageCache {
+  private var cache: NSCache<NSString, UIImage>
+  init() {
+    cache = NSCache<NSString, UIImage>()
+    // NSString is a clsss
+  }
+}
+
+class OtherImageCache {
+  private var cache: NSCache<NSString, UIImage>
+  init() {
+    cache = NSCache<String, UIImage>() // 'NSCache' requires that 'String' be a class type
+    // recall: Swift's String is a struct
+  }
+}
+```
+
 
 ## Writing to a file in the App's Sandbox
 
@@ -275,4 +297,5 @@ Given a sentence, determine whether it is a pangram. Ignore case.
 1. [Swift Programming Language - Strings and Characters](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)
 2. [Apple Documentation - String](https://developer.apple.com/documentation/swift/string)
 3. [Apple Documentation - Character](https://developer.apple.com/documentation/swift/character)
+4. [Apple Documentation - CharacterSet](https://developer.apple.com/documentation/foundation/characterset)
 

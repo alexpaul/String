@@ -75,27 +75,40 @@ https://swift.org/blog/utf8-string/
 
 ## Accessing the elements of a String using `String.Index`
 
-Contrary to an array in a String you can only subscript into its' collection of characters using `String.Index` as in the following examples. This is inherently because a character in a String an mentioned earlier can be one or more unicode values, so this would not give you back the desired effect you may need and Swift makes use of `String.Index` for this purpose.
+Contrary to an array in a String you can only subscript into its' collection of characters using `String.Index` as in the following examples. This is inherently because a character in a String an mentioned earlier can be one or more unicode values, so this would not give you back the desired effect you may need and Swift makes use of `String.Index` for this purpose. 
 
 ```swift 
-let fullName = "Alex Paul"
+let someStr = "🇺🇸 this is the us flag"
+
+let first = someStr[0] // COMPILER ERROR - cannot subsctipt String with Int, use String.Index instead
+
+let firstChar = someStr[someStr.startIndex]
+
+print(firstChar) // "🇺🇸"
 ```
+
 
 #### Accessing the first element
 
 ```swift 
+let fullName = "Alex Paul"
+
 print(fullName[fullName.startIndex]) // A
 ```
 
 #### Access the last element in a String 
 
 ```swift 
+let fullName = "Alex Paul"
+
 print(fullName[fullName.index(before: fullName.endIndex)]) // l
 ```
 
 #### Finding the first occurrence of a given element in a String 
 
 ```swift 
+let fullName = "Alex Paul"
+
 let spaceCharacterIndex = fullName.firstIndex(of: " ") ?? fullName.endIndex
 
 let firstName = fullName[..<spaceCharacterIndex]
